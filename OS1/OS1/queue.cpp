@@ -117,7 +117,7 @@ PCB* pQueue::get(){
 	return NULL;
 }
 PCB* pQueue::remove(int id){
-	PCB* p = Queue::remove(id);
+	PCB* p = Queue::remove(id);//skinem sa natklase plus ovde dodam vreme sledecem.. vreme koje bi cekao ovoga!
 	if(p!=NULL){
 		if(Next!=NULL)//ovo ovde nije prev nego next promeni ime u klasi da bude razumevli
 			Next->pcb->semaphoreTime+=p->semaphoreTime;//negde se koristi kao prev negde kao next;
